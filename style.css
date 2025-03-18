@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+}
+
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+         text-shadow: 0 0 5px white; 
+    }
+    50% {
+         text-shadow: 5px 5px 20px rgb(229, 255, 0);
+    }
+    100% {
+         text-shadow: 0 0 5px white; 
+    }
+}
+
+div{
+    border: 2px solid black;
+    border-radius: 2rem;
+    width: 32rem;
+    height: 12.5rem;
+    margin: auto;
+    color: white;
+
+}
+
+button{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 5px 2px 10px red;
+}
+
+@media (max-width: 600px) {
+    div {
+        width: 90%;
+        min-height: 10rem;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
